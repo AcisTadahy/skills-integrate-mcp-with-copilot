@@ -7,14 +7,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Mergington High School</h1>
-      <h2>Extracurricular Activities</h2>
+    <div class="branch-lines" aria-hidden="true">
+      <span class="branch-line branch-line-one"></span>
+      <span class="branch-line branch-line-two"></span>
+      <span class="branch-line branch-line-three"></span>
+      <span class="branch-line branch-line-four"></span>
+    </div>
+
+    <header class="site-header">
+      <div class="header-copy">
+        <p class="eyebrow">Mergington High / Student life</p>
+        <h1>Find your next <span>thing.</span></h1>
+        <p class="intro">A lively place to learn, make, compete, and find your people after the bell.</p>
+      </div>
+      <div class="mascot-crew" aria-label="Our Octodex school mascots">
+        <figure class="mascot mascot-professor">
+          <img src="https://octodex.github.com/images/Professortocat_v2.png" alt="Professortocat" />
+        </figure>
+        <figure class="mascot mascot-droid">
+          <img src="https://octodex.github.com/images/droidtocat.png" alt="Droidtocat" />
+        </figure>
+        <figure class="mascot mascot-coder">
+          <img src="https://octodex.github.com/images/codercat.jpg" alt="Codercat" />
+        </figure>
+      </div>
     </header>
 
     <main>
       <section id="activities-container">
-        <h3>Available Activities</h3>
+        <div class="section-heading">
+          <p class="section-kicker">The lineup</p>
+          <h2>Available activities</h2>
+          <p>Pick a room, a team, or a challenge. There is space for your next chapter.</p>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
@@ -22,7 +47,11 @@
       </section>
 
       <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
+        <div class="section-heading">
+          <p class="section-kicker">Make it official</p>
+          <h2>Join the roster</h2>
+          <p>Choose an activity and bring your school email. We will save you a spot.</p>
+        </div>
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
@@ -35,14 +64,14 @@
               <!-- Activity options will be loaded here -->
             </select>
           </div>
-          <button type="submit">Sign Up</button>
+          <button type="submit">Sign me up <span aria-hidden="true">↗</span></button>
         </form>
         <div id="message" class="hidden"></div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2026 Mergington High School</p>
+      <p>&copy; 2026 Mergington High School <span>·</span> Built for bright ideas</p>
     </footer>
 
     <script src="app.js"></script>
